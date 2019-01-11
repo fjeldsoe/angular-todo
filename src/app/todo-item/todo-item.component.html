@@ -1,0 +1,8 @@
+<div class="todoItem">
+    <mat-checkbox [(ngModel)]="todo.complete" (change)="markComplete(todo)">
+      <span>{{todo.title}}</span>
+    </mat-checkbox>
+    <button class="todoItem__deleteButton" (click)="deleteTodo(todo.id)">
+        <mat-icon svgIcon="clear"></mat-icon>
+    </button>
+</div>

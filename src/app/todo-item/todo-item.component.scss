@@ -1,0 +1,15 @@
+:host {
+    width: 100%;
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+
+    &__deleteButton {
+        margin-left: auto;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+}

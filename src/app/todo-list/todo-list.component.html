@@ -1,0 +1,14 @@
+<div class="todoList">
+  <mat-form-field class="todoList__form">
+      <input matInput placeholder="Add Todo" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
+    </mat-form-field>
+</div>
+<mat-list>
+  <mat-list-item *ngFor="let todo of todos">
+      <todo-item
+        [todo]="todo"
+        (todoMarkedComplete)="todoMarkedCompleteHandler($event)"
+        (todoDeleted)="todoDeletedHandler($event)"
+      ></todo-item>
+  </mat-list-item>
+</mat-list>
