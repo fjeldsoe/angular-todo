@@ -15,19 +15,7 @@
     {
       "title": "Drink more beer",
       "completed": false,
-      "id": 22,
-      "complete": false
-    },
-    {
-      "title": "Make me supper",
-      "completed": false,
-      "id": 23,
-      "complete": true
-    },
-    {
-      "title": "Test",
-      "completed": false,
-      "id": 24
+      "id": 22
     }
   ]
 }

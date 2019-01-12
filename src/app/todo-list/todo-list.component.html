@@ -1,14 +1,19 @@
 <div class="todoList">
   <mat-form-field class="todoList__form">
-      <input matInput placeholder="Add Todo" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
-    </mat-form-field>
-</div>
-<mat-list>
-  <mat-list-item *ngFor="let todo of todos">
-      <todo-item
+    <input matInput placeholder="Add Todo" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
+  </mat-form-field>
+  <mat-list>
+    <ng-container *ngFor="let todo of todos">
+      <mat-list-item *ngIf="!todo.complete || (todo.complete && !hideCompleted)">
+        <todo-item
         [todo]="todo"
         (todoMarkedComplete)="todoMarkedCompleteHandler($event)"
         (todoDeleted)="todoDeletedHandler($event)"
-      ></todo-item>
-  </mat-list-item>
-</mat-list>
+        ></todo-item>
+      </mat-list-item>
+    </ng-container>
+  </mat-list>
+  <mat-toolbar class="todoList__toolbar">
+    <mat-slide-toggle (change)="hideCompletedHandler()">Hide completed</mat-slide-toggle>
+  </mat-toolbar>
+</div>

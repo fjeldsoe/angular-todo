@@ -1,3 +1,5 @@
+@import "../../variables";
+
 :host {
     width: 100%;
 }
@@ -11,5 +13,9 @@
         background: none;
         border: 0;
         cursor: pointer;
+    }
+
+    &__clear {
+        fill: $icon-color;
     }
 }

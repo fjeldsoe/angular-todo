@@ -11,6 +11,7 @@ import Todo from '../todo';
 export class TodoListComponent implements OnInit {
   todoTitle: string;
   todos: object[];
+  hideCompleted: boolean = false;
 
   constructor(private todoService: TodoService) {
   }
@@ -45,6 +46,10 @@ export class TodoListComponent implements OnInit {
 
   todoDeletedHandler(id) {
     this.todos = this.todos.filter(todo => todo['id'] !== id);
+  }
+
+  hideCompletedHandler() {
+    this.hideCompleted = !this.hideCompleted
   }
 
 }
