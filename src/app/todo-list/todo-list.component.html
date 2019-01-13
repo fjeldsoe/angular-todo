@@ -4,7 +4,7 @@
   </mat-form-field>
   <mat-list>
     <ng-container *ngFor="let todo of todos">
-      <mat-list-item *ngIf="!todo.complete || (todo.complete && !hideCompleted)">
+      <mat-list-item *ngIf="!todo.completed || (todo.completed && !hideCompleted)">
         <todo-item
         [todo]="todo"
         (todoMarkedComplete)="todoMarkedCompleteHandler($event)"

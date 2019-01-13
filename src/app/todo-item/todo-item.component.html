@@ -1,5 +1,5 @@
 <div class="todoItem">
-    <mat-checkbox [(ngModel)]="todo.complete" (change)="markComplete(todo)">
+    <mat-checkbox [(ngModel)]="todo.completed" (change)="markComplete(todo)">
       <span>{{todo.title}}</span>
     </mat-checkbox>
     <button class="todoItem__deleteButton" (click)="deleteTodo(todo.id)">
