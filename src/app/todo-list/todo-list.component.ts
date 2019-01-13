@@ -13,8 +13,7 @@ export class TodoListComponent implements OnInit {
   todos: object[];
   hideCompleted: boolean = false;
 
-  constructor(private todoService: TodoService) {
-  }
+  constructor(private todoService: TodoService) {}
 
   ngOnInit() {
     this.todoTitle = '';
