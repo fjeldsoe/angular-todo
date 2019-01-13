@@ -1,24 +1,34 @@
 {
   "todos": [
     {
-      "title": "Drink beer",
-      "completed": false,
+      "title": "Single Page Application",
+      "completed": true,
       "id": 1
     },
     {
-      "title": "Do awesome code",
+      "title": "Trial of Umbraco Cloud",
       "completed": false,
       "id": 2
     },
     {
-      "title": "Drink more beer",
-      "completed": false,
+      "title": "Personal text",
+      "completed": true,
       "id": 3
     },
     {
-      "title": "Go home and sleep",
-      "completed": false,
+      "title": "Movie Review - Sideways",
+      "completed": true,
       "id": 4
+    },
+    {
+      "title": "Drink beer",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "title": "Sleep",
+      "completed": false,
+      "id": 6
     }
   ]
 }
